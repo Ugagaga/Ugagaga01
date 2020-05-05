@@ -34,6 +34,8 @@
   <p>
     javascript는 html을 제어하는 언어이다.
    </p>
+   <p>
+     <h2>(input을 사용한 코드들은 html이고 html의 코드들중 javascript가 오는 코드들이 있다.)</h2>
    <input type="button" value="night" onclick="
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
@@ -64,6 +66,17 @@
         <br> 자바스크립트의 <u><strong>장점</strong></u>은<strong>계산기 등의 다양한 기능이 가능하다.</strong>
           <br>[EX:기본적으로 html의 1+1을 입력할 시 1+1이 나오지만 자바스크립트의 1+1 은 2가 나온다.]
       </p>
-       자바스크립트에서 어떤 글씨를 출력할 때에는 document.write(abc);를 쓴다.(<>는 사용하지 않는다.)
-</body>
+       자바스크립트에서 어떤 글씨를 출력할 때에는 document.write(abc);를 쓴다.
+       <p>
+         <strong>[input type="button" value="HI" onclick="alert('HI!')"]</strong>에서 <strong><u>alert</u></strong>을 사용하면
+         <strong>('')</strong>안에 있는 메세지가 뜬다.
+       </p>
+       <p>
+         웹 브라우저 위에서 일어나는 일들을 <u><strong>사건(영어:이벤트)</strong></u>라고 한다.
+       </p>
+       <strong>[input type="text"]</strong>처럼 type에 <strong>text</strong>를 넣으면 칸이 생기고 그 칸에 글자를 쓸 수 있다.
+       <br> 또한 text="" 후에 <strong>onchange="alert('abc')"</strong> 나 <strong>onkeydown="alert('dey down')"</strong>을 사용하여 메세지를 띄울 수 있다.
+       <br><strong>onchange="alert('abc')"</strong> 의 경우 칸 안에 글자를 넣고 다른것을 클릭할 경우 ('')안에 있는 메세지가 뜨고,
+       <br><strong>onkeydown="alert('dey down')"</strong>의 경우 칸 안에 키보드의 키를 누를 시 ('')안에 있는 메세지가 뜬다.
+    </body>
 </html>
