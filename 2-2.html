@@ -8,6 +8,20 @@
       color:red;
       font-weight: bold;
     }
+    #first{
+      color:blue;
+    }
+    #secound{
+      color:green;
+    }
+    #third{
+      color:orange;
+      font-weight: bold:
+    }
+    div{
+      font-size:20px;
+    }
+
     </style>
 </head>
 
@@ -27,5 +41,13 @@
   <br> 위의 것을 해석하면 class값이js문구들을 전부 {}안에 있는 명령어가 실행되게 한다.
   <p>ex: <span class="js">가나다</span><span class="js">ABC</span>가나다라마바사
     <br> <span class="js">nickname</span> nickname abc <span class="js">abc</span>
+    <p>
+       CSS에서 점(.)이 붙은것은 class를 의미하는 것이고 샾(#)이 붙은것은 id를 의미하게끔 약속되어 있다.<div>(우선순위는 id>class>span,다른 명령어끼리는 충돌되지 않는다.)</div><div class="js">(class를 광범위하게 사용한뒤 예외적인 것들을 id를 사용한다.)</div>
+       class와 id중에서 class는 포괄적이고 id는 하나를 짚어서 쓰는것이다. <div class="js">id="first"를 한번 사용했다면 id="first"를 사용하면 안된다.</div>
+      <span id="first"class="js">무지개</span><span class="js">,</span><span id="secound">등대</span>
+      <p>span{
+      <br>   abc
+      <br>} <div id="third">라고 입력하면 모든 span태그들을 지정하는 것이다.</div>
+    </p>
 </body>
 </html>
