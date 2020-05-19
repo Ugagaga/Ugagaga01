@@ -12,6 +12,12 @@
 
   gtag('config', 'UA-165301167-1');
 </script>
+<style>
+  .js{
+    font-size:20px;
+    color:blue;
+  }
+  </style>
 
 </head>
 
@@ -25,6 +31,7 @@
       <h2><li><a href=IJih.html target="_blank"title="IJig">Insert JavaScript into html</h2></a></li>
       <h2><li><a href="3-2.html" target="_blank" title="3-2"> 3-2</h2></a></li>
       <h2><li><a href="3-3.html" target="_blank" title="3-3">3-3</h2></a></li>
+      <h2><li><a href="3-4.html" target="_blank" title="3-4">3-4</h2></a></li>
     </ul>
     </p>
   <p>
@@ -45,6 +52,17 @@
     <input type="button" value="day" onclick="
       document.querySelector('body').style.backgroundColor='white';
       document.querySelector('body').style.color='black';
+      ">
+      <input id="night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#night_day').value = 'day';
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#night_day').value = 'night';
+      }
       ">
   <p>
     <big><strong>input</strong></big>이란 태그를 사용해 다음 코드들을 보일 수 있다.
@@ -118,6 +136,12 @@
             <br> var asdf='fdsa';
             <br>alert("asdfa sdfas "+asdf+" "+asdf+" 3wqetg mpoin po bnio "+asdf+" qwer zxcv jkl uiop bnmz asdfa sdfas "+asdf+" "+asdf+" 3wqetg mpoin po bnio "+asdf+" qwer zxcv jkl uiop bnmz asdfa sdfas "+asdf+" "+asdf+" 3wqetg mpoin po bnio "+asdf+" qwer zxcv jkl uiop bnmz asdfa sdfas "+asdf+" "+asdf+" 3wqetg mpoin po bnio "+asdf+" qwer zxcv jkl uiop bnmz asdfa sdfas "+asdf+" "+asdf+" 3wqetg mpoin po bnio "+asdf+" qwer zxcv jkl uiop bnmz asdfa sdfas "+asdf+" "+asdf+" 3wqetg mpoin po bnio "+asdf+" qwer zxcv jkl uiop bnmz");처럼 <big><strong>모든 asdf를 "+asdf+"</strong></big>로 바꿔준다면 <big><strong>asdf는 fdsa로</strong></big> 바뀔것이다.
             <p>
+            <span class="js">  if(true or false){
+            <br>    abc
+              <br>} else {
+                <br>ABC
+              <br>}         </span>
+              <br> 에서 if(true)라면 {a}else{b}중 a가 있는 칸의 명령어가 실행되고 if(false)라면 {a}else{b}중 b가 있는 칸의 명령어가 실행된다.
 
 
 
